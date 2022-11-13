@@ -105,7 +105,6 @@
             $conn = new PDO("mysql:host=localhost;dbname=webboard;charset=utf8","root","");
 
             $sql1 = "SELECT * FROM post ORDER BY post_date desc";
-            $result1 = $conn->query($sql1);
 
             foreach($conn->query($sql1) as $row){
                 $result2 = $conn->query("SELECT * FROM category where id = $row[cat_id]");
