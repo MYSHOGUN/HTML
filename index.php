@@ -115,7 +115,7 @@
 
                 echo "<tr><td>[ $data2[name] ]<a href = post.php?id=$row[id] style=text-decoration:none> $row[title]</a><BR>$data3[name] - $row[post_date]</td>";
                 if($_SESSION['role'] == 'a'){
-                    echo "<td><a href = delete.php?id=$row[id] class='btn btn-danger btn-sm mt-2' onclick='return myFunction1();'><i class='bi bi-trash'></i></a></td>";
+                    echo "<td class = 'text-center'><a href = delete.php?id=$row[id] class='btn btn-danger btn-sm mt-2' onclick='return myFunction1();'><i class='bi bi-trash'></i></a></td>";
                 }
                 echo "</tr>";
             }
